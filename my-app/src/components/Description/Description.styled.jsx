@@ -11,7 +11,8 @@ padding-top: 30px
 `
 
 export const Photo = styled.img`
-width: 80px
+width: 100px;
+border-radius:50%;
 `
 export const Name = styled.p`
 
