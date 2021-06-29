@@ -11,7 +11,7 @@ function Statlist() {
                     <Text>{label}</Text>
                     <Text>{percentage}</Text>
                  </Item>   
-                )
+                ) 
                 )}
         </Menu>
     )
