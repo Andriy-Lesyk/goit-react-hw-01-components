@@ -7,7 +7,7 @@ function Friends() {
         <Friendslist>{
             FriendsInfo.map(({avatar, name, isOnline, id})=>(
                 <Friend key={id}>
-                    <Status></Status>
+                    <Status type={isOnline}></Status>
                     <Photo src={avatar}></Photo>
                     <Text>{name}</Text>
                 </Friend>

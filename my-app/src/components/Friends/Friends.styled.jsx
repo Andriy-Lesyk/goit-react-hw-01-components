@@ -8,6 +8,8 @@ margin:0;
 display:flex;
 flex-direction: column;
 justify-content:center;
+align-items:center;
+margin-bottom: 40px;
 `
 
 export const Friend = styled.li`
@@ -21,7 +23,7 @@ padding: 10px 0;
 box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
 `
 export const Status = styled.div`
-background-color: ${FriendsInfo.isOnline ? 'green':'red'};
+background-color: ${props=>props.type ? 'green':'red'};
 border-radius:50%;
 width: 30px;
 height: 30px;

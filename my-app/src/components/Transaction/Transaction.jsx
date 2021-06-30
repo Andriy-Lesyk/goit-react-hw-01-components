@@ -1,5 +1,5 @@
 import React from 'react';
-import {Table, TableHead, TableBody, Tablerow} from "./Transaction.styled";
+import {Table, TableHead, TableBody, Tablerow, Thead, Tdata} from "./Transaction.styled";
 import Transact from "../data/transaction.json"
 
 function Transaction() {
@@ -7,17 +7,17 @@ function Transaction() {
         <Table>
             <TableHead>
                 <Tablerow>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Currency</th>
+                    <Thead>Type</Thead>
+                    <Thead>Amount</Thead>
+                    <Thead>Currency</Thead>
                     </Tablerow>
             </TableHead>
             <TableBody>{
                 Transact.map(({id, type, amount, currency})=>(
                 <Tablerow key={id}>
-                    <td>{type}</td>
-                    <td>{amount}</td>
-                    <td>{currency}</td>
+                    <Tdata>{type}</Tdata>
+                    <Tdata>{amount}</Tdata>
+                    <Tdata>{currency}</Tdata>
                     </Tablerow>
                 ))}</TableBody>
         </Table>
