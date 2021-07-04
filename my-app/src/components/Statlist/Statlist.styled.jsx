@@ -16,5 +16,7 @@ padding-left:10px;
 padding-right:10px;
 border: 1px solid;
 `
-export const Text = styled.span`
+export const Label = styled.span`
+`
+export const Percent = styled.span`
 `

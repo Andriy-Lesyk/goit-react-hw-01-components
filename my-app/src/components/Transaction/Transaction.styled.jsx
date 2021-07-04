@@ -22,7 +22,15 @@ border: 1px solid;
 width: 100px;
 background-color: lightblue;
 `
-export const Tdata=styled.td`
+export const Tdtype=styled.td`
 border: 1px solid;
 width:100px
-` 
+`
+export const Tdamount = styled.td`
+border: 1px solid;
+width:100px
+`
+export const Tdcurrency = styled.td`
+border: 1px solid;
+width:100px
+`

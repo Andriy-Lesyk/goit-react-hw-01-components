@@ -1,5 +1,6 @@
 import React from 'react';
-import {Table, TableHead, TableBody, Tablerow, Thead, Tdata} from "./Transaction.styled";
+import PropTypes from "prop-types"
+import {Table, TableHead, TableBody, Tablerow, Thead, Tdtype, Tdamount, Tdcurrency} from "./Transaction.styled";
 import Transact from "../data/transaction.json"
 
 function Transaction() {
@@ -15,13 +16,16 @@ function Transaction() {
             <TableBody>{
                 Transact.map(({id, type, amount, currency})=>(
                 <Tablerow key={id}>
-                    <Tdata>{type}</Tdata>
-                    <Tdata>{amount}</Tdata>
-                    <Tdata>{currency}</Tdata>
+                    <Tdtype>{type}</Tdtype>
+                    <Tdamount>{amount}</Tdamount>
+                    <Tdcurrency>{currency}</Tdcurrency>
                     </Tablerow>
                 ))}</TableBody>
         </Table>
     )
 }
 
+Transaction.propTypes = {
+    key: PropTypes.string,
+}
 export default Transaction

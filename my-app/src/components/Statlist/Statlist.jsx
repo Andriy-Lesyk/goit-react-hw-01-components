@@ -1,6 +1,6 @@
 import React from 'react';
 import Statistical from "../data/statistical.json";
-import {Item, Menu, Text} from "./Statlist.styled"
+import {Item, Menu, Label, Percent} from "./Statlist.styled"
 
 function Statlist() {
     return (
@@ -8,8 +8,8 @@ function Statlist() {
             {
                 Statistical.map(({id,label,percentage})=>(
                  <Item key={id}>
-                    <Text>{label}</Text>
-                    <Text>{percentage}</Text>
+                    <Label>{label}</Label>
+                    <Percent>{percentage}</Percent>
                  </Item>   
                 ) 
                 )}

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import FriendsInfo from "../data/friends.json"
+
 
 export const Friendslist = styled.ul`
 list-style: none;
@@ -14,7 +14,7 @@ margin-bottom: 40px;
 
 export const Friend = styled.li`
 display:flex;
-align-items:center;
+align-items:center; 
 justify-content:center;
 margin-top:10px;
 border: 1px solid;

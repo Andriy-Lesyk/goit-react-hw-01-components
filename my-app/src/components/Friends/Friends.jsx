@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import FriendsInfo from "../data/friends.json"
 import {Friendslist, Status, Photo, Text, Friend} from "./Friends.styled"
 
@@ -16,4 +17,9 @@ function Friends() {
     )
 }
 
+Friends.propTypes = {
+    key: PropTypes.number,
+    src: PropTypes.string,
+    type: PropTypes.bool,
+}
 export default Friends

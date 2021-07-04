@@ -4,12 +4,12 @@ import user from "../data/user.json"
 
 function Descript() {
     return (
-    <Description>
-        <Photo src={user.avatar}></Photo>
-        <Name>{user.name}</Name>
-        <Tag>{user.tag}</Tag>
-        <Location>{user.location}</Location>
-    </Description>
+        <Description >
+            <Photo src={user.avatar}/>
+            <Name>{user.name}</Name>
+            <Tag>{user.tag}</Tag>
+            <Location>{user.location}</Location>
+        </Description>
     )
 }
 
