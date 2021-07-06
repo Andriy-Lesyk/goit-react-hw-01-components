@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from "prop-types"
-import FriendsInfo from "../data/friends.json"
-import {Friendslist, Status, Photo, Text, Friend} from "./Friends.styled"
+import { Friendslist, Status, Photo, Text, Friend } from "./Friends.styled"
 
-function Friends() {
+
+function Friends({ friends}) {
     return (
         <Friendslist>{
-            FriendsInfo.map(({avatar, name, isOnline, id})=>(
+            friends.map(({avatar, name, isOnline, id})=>(
                 <Friend key={id}>
-                    <Status type={isOnline}></Status>
+                    <Status isOnline={isOnline}></Status>
                     <Photo src={avatar}></Photo>
                     <Text>{name}</Text>
                 </Friend>

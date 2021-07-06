@@ -1,13 +1,20 @@
 import React from "react";
-import Statlist from "../Statlist/Statlist";
-import PropTypes from "prop-types";
-import {Container, Name} from "./Statistics.styles"
+import {Container, Name, Menu, Item, Label, Percent} from "./Statistics.styles"
 
-const Statistics=()=>{
+const Statistics = ({ title, stats})=>{
     return (
         <Container>
-            <Name>upload stats</Name>
-            <Statlist></Statlist>
+            <Name>{ title}</Name>
+            <Menu>
+                {
+                    stats.map(({ id, label, percentage }) => (
+                        <Item key={id}>
+                            <Label>{label}</Label>
+                            <Percent>{percentage}</Percent>
+                        </Item>
+                    )
+                    )}
+            </Menu>
         </Container>
     )
 
