@@ -25,15 +25,21 @@ function App() {
   );
 }
 
-App.propTypes = {
+Profile.propTypes = {
   name: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
   avatar: PropTypes.string,
-  statis:PropTypes.object,
+  statis: PropTypes.object,
+}
+Statistics.propTypes={
   title: PropTypes.string,
   stats : PropTypes.array,
-  friends:PropTypes.array,
+}
+Friends.propTypes = {
+  friends: PropTypes.array,
+}
+Transaction.propTypes={
   transacts:PropTypes.array,
 };
 
